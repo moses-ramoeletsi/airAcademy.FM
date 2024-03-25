@@ -87,7 +87,6 @@ const ContactPage = () => {
           </Box>
         </Box>
 
-        {/* Social Links */}
         <Flex justifyContent="center">
           <Link href="#" mx={2}>
             <Icon as={FaWhatsapp} boxSize={8} color="green.500" />
@@ -104,7 +103,6 @@ const ContactPage = () => {
         </Flex>
       </Box>
 
-      {/* Contact Form */}
       <Box padding={4}>
         <Card padding={6} borderRadius="lg" boxShadow="md">
           <Heading as="h2" size="lg" marginBottom={4}>
