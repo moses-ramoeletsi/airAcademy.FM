@@ -49,7 +49,7 @@ const ContactPage = () => {
 
   return (
     <Flex direction="column" align="center" justify="center">
-      <Box padding={4} width={"98%"} maxWidth={'1550px'}>
+      <Box padding={4} width={"98%"} maxWidth={"1550px"}>
         <Grid
           templateColumns={{ base: "1fr", md: "repeat(2, 1fr)" }}
           gap={{ base: 4, md: 8 }}

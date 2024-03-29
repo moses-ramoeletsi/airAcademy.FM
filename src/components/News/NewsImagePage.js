@@ -3,9 +3,9 @@ import { Heading, Flex, Box, AspectRatio, Link } from "@chakra-ui/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import NewsModal from './../../Model/newsModel';
+import NewsModal from "./../../Model/newsModel";
 import newsData from "../../data/newsData";
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 
 const NewsHomePage = () => {
   const [selectedNewsItem, setSelectedNewsItem] = useState(null);
@@ -63,12 +63,7 @@ const NewsHomePage = () => {
                     height="100%"
                   />
                 </AspectRatio>
-                <Heading
-                  as="h2"
-                  size="lg"
-                  mb="2"
-                  cursor="pointer"
-                >
+                <Heading as="h2" size="lg" mb="2" cursor="pointer">
                   {newsItem.heading}
                 </Heading>
               </Link>

@@ -16,7 +16,7 @@ import React from "react";
 const AboutUs = () => {
   return (
     <Flex direction="column" align="center" justify="center">
-      <Box padding={[4, 8]} width={"98%"} maxWidth={'1550px'}>
+      <Box padding={[4, 8]} width={"98%"} maxWidth={"1550px"}>
         <Heading as="h1" size="xl" mb={8} textAlign="center">
           About Us
         </Heading>

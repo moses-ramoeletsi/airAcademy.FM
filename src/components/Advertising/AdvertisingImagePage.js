@@ -3,7 +3,7 @@ import { Heading, Flex, Box, AspectRatio, Link } from "@chakra-ui/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { IoIosArrowBack, IoIosArrowForward } from 'react-icons/io';
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import AdvertModel from "../../Model/advertModel";
 import advertisingData from "../../data/AdvetisingData";
 
@@ -63,12 +63,7 @@ const AdvertisementPage = () => {
                     height="100%"
                   />
                 </AspectRatio>
-                <Heading
-                  as="h2"
-                  size="lg"
-                  mb="2"
-                  cursor="pointer"
-                >
+                <Heading as="h2" size="lg" mb="2" cursor="pointer">
                   {advertItem.heading}
                 </Heading>
               </Link>

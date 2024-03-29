@@ -71,9 +71,9 @@ const TodaySchedule = ({ programsByDay }) => {
           overflowX="auto"
           whiteSpace="nowrap"
           sx={{
-            '&::-webkit-scrollbar': {
-              display: 'none'
-            }
+            "&::-webkit-scrollbar": {
+              display: "none",
+            },
           }}
         >
           {getCurrentDayPrograms().map((program) => (

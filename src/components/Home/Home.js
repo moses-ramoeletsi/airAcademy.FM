@@ -28,7 +28,7 @@ const Home = () => {
   return (
     <Box>
       <Flex direction="column" align="center" justify="center">
-        <Box padding={4} width={"98%"} maxWidth={'1550px'}>
+        <Box padding={4} width={"98%"} maxWidth={"1550px"}>
           <Box p={4}>
             <Center
               flexDirection={{ base: "column", md: "row" }}
@@ -72,7 +72,10 @@ const Home = () => {
               </Center>
             )}
           </Box>
-          <TodaySchedule  currentDate={currentDate} programsByDay={programsByDay} />
+          <TodaySchedule
+            currentDate={currentDate}
+            programsByDay={programsByDay}
+          />
           <Box padding={2}>
             <Grid
               templateColumns={{ base: "1fr", md: "repeat(4, 1fr)" }}
