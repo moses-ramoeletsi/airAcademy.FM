@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Footer from "./Footer/Footer";
+import Footer from "../Footer/Footer";
 import {
   Box,
   Button,
@@ -11,10 +11,10 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import TodaySchedule from "./Schedule/TodaySchedule";
-import programsByDay from "../data/Programs";
-import NewsHomePage from "./News/NewsImagePage";
-import AdvertisementPage from "./Advertising/AdvertisingImagePage";
+import TodaySchedule from "../Schedule/TodaySchedule";
+import programsByDay from "../../data/Programs";
+import NewsHomePage from "../News/NewsImagePage";
+import AdvertisementPage from "../Advertising/AdvertisingImagePage";
 
 const Home = () => {
   const [isPlaying, setIsPlaying] = useState(false);

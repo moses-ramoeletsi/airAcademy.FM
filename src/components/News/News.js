@@ -12,7 +12,7 @@ import {
 const NewsPage = () => {
   return (
     <Flex direction="column" align="center" justify="center">
-      <Box width="98%" padding="4">
+      <Box width="98%" maxWidth={'1550px'} padding="4">
         <Heading as="h1" mb="8" textAlign="center">
           Latest News Updates
         </Heading>

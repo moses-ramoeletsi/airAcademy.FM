@@ -64,7 +64,7 @@ const Schedule = ({ programsByDay }) => {
 
   return (
     <Flex direction="column" align="center" justify="center">
-      <Box p={4} overflowX="auto" width={"98%"}>
+      <Box p={4} overflowX="auto" width={"98%"} maxWidth={'1550px'}>
         <Table variant="simple" w="full" maxW="100%">
           <Thead>
             <Tr>
