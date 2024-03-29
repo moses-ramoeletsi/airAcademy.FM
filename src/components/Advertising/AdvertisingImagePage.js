@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import { Heading, Flex, Box, AspectRatio, Link } from "@chakra-ui/react";
+import { Heading, Flex, Box, AspectRatio, Link, useBreakpointValue } from "@chakra-ui/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -38,6 +38,8 @@ const AdvertisementPage = () => {
     setIsAdvertModalOpen(false);
   };
 
+  const arrowSize = useBreakpointValue({ base: 24, sm: 32 });
+
   return (
     <Flex direction="column" align="center" justify="center">
       <Box width="98%" padding="4" position="relative">
@@ -56,7 +58,7 @@ const AdvertisementPage = () => {
                   <Box
                     as="img"
                     src={advertItem.imageUrl}
-                    alt={`Adertisement ${index + 1}`}
+                    alt={`Advertisement ${index + 1}`}
                     objectFit="cover"
                     borderRadius="md"
                     maxWidth="100%"
@@ -72,7 +74,7 @@ const AdvertisementPage = () => {
         </Slider>
         <IoIosArrowBack
           onClick={handlePrevSlide}
-          size={32}
+          size={arrowSize}
           style={{
             cursor: "pointer",
             position: "absolute",
@@ -83,7 +85,7 @@ const AdvertisementPage = () => {
         />
         <IoIosArrowForward
           onClick={handleNextSlide}
-          size={32}
+          size={arrowSize}
           style={{
             cursor: "pointer",
             position: "absolute",
@@ -95,7 +97,7 @@ const AdvertisementPage = () => {
         <AdvertModel
           isOpen={isAdvertModalOpen}
           onClose={closeModal}
-          adverItem={selectedAdvertItem}
+          advertItem={selectedAdvertItem}
         />
       </Box>
     </Flex>

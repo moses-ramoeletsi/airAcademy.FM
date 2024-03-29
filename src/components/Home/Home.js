@@ -28,8 +28,8 @@ const Home = () => {
   return (
     <Box>
       <Flex direction="column" align="center" justify="center">
-        <Box padding={4} width={"98%"} maxWidth={"1550px"}>
-          <Box p={4}>
+        <Box padding={4} width={"98%"} maxWidth={'1550px'}>
+          <Box p={4} >
             <Center
               flexDirection={{ base: "column", md: "row" }}
               alignItems={{ base: "center", md: "flex-start" }}
@@ -42,6 +42,7 @@ const Home = () => {
               <VStack
                 p={3}
                 ml={{ base: 0, md: 6 }}
+                mt={'100px'}
                 textAlign={{ base: "center", md: "left" }}
               >
                 <Button
@@ -51,7 +52,8 @@ const Home = () => {
                 >
                   {isPlaying ? "Pause" : "Play"} Live Stream
                 </Button>
-                <Text>Time: 80:00</Text>
+                <Text>Time: 08:00</Text>
+                <Text>Programe: Night To Morning</Text>
               </VStack>
             </Center>
           </Box>
@@ -72,10 +74,7 @@ const Home = () => {
               </Center>
             )}
           </Box>
-          <TodaySchedule
-            currentDate={currentDate}
-            programsByDay={programsByDay}
-          />
+          <TodaySchedule  currentDate={currentDate} programsByDay={programsByDay} />
           <Box padding={2}>
             <Grid
               templateColumns={{ base: "1fr", md: "repeat(4, 1fr)" }}
